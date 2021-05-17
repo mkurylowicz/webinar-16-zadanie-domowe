@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Webinar 16 Suite" verbose="1" >
+    <test name="Test all TCs" >
+        <parameter name="name" value="Zenon"></parameter>
+        <classes>
+
+        </classes>
+    </test>
+
+</suite>
