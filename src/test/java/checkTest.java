@@ -22,12 +22,16 @@ public class checkTest extends BasePage{
     @Test
     public void checkMenu(){
         WebElement clothes = driver.findElement(By.cssSelector("#category-3 a"));
+        String clothesTxt = clothes.getText();
         WebElement produktyPowiazane = driver.findElement(By.cssSelector("#category-6 a"));
+        String produktyPowiazaneTxt = produktyPowiazane.getText();
         WebElement art = driver.findElement(By.cssSelector("#category-9 a"));
+        String atrTxt = art.getText();
 
-        Assert.assertTrue(clothes.isDisplayed());
-        Assert.assertTrue(produktyPowiazane.isDisplayed());
-        Assert.assertTrue(art.isDisplayed());
+        Assert.assertEquals(clothesTxt, "CLOTHES");
+        Assert.assertEquals(produktyPowiazaneTxt, "PRODUKTY POWIĄZANE");
+        Assert.assertEquals(atrTxt, "ART");
+
     }
 
 }
